@@ -1,0 +1,10 @@
+language: csharp
+solution: Nebula.sln
+dotnet: 2.1.402
+install:
+  - dotnet restore Nebula.sln
+  - nuget restore Nebula.sln
+  - nuget install NUnit.Runners -Version 3.9.0 -OutputDirectory testrunner
+script:
+  - xbuild /p:Configuration=Release Nebula.sln
+  #- mono ./testrunner/NUnit.Runners.3.9.0/tools/nunit-console ./Nebula.Test/bin/Release/Nec.Nebula.Test.dll
