@@ -1,0 +1,9 @@
+error:
+  code:
+    bucket: CUSTOM_CODE
+    file: err-1.0.0.tgz
+  handler: error
+  env:
+    spec: node6
+    timeout: 600
+    memorySize: 128

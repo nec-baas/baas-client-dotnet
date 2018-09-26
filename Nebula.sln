@@ -1,0 +1,53 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.40629.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{51DA521C-6B39-4A87-9EBA-111D3484FEE0}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nebula.Test", "Nebula.Test\Nebula.Test.csproj", "{5AAB08F8-389D-43B5-8D77-DE30CFE4CDD9}"
+	ProjectSection(ProjectDependencies) = postProject
+		{91946589-F262-4599-B99E-0DD9AF555975} = {91946589-F262-4599-B99E-0DD9AF555975}
+		{FB65ADC8-8235-459F-853C-62FCBF201E9C} = {FB65ADC8-8235-459F-853C-62FCBF201E9C}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nebula.IT", "Nebula.IT\Nebula.IT.csproj", "{77E7A804-F88E-4221-A7BB-BE518A1448ED}"
+	ProjectSection(ProjectDependencies) = postProject
+		{91946589-F262-4599-B99E-0DD9AF555975} = {91946589-F262-4599-B99E-0DD9AF555975}
+		{FB65ADC8-8235-459F-853C-62FCBF201E9C} = {FB65ADC8-8235-459F-853C-62FCBF201E9C}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nebula.Core", "Core\Nebula.Core.csproj", "{91946589-F262-4599-B99E-0DD9AF555975}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nebula.Offline", "Offline\Nebula.Offline.csproj", "{FB65ADC8-8235-459F-853C-62FCBF201E9C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5AAB08F8-389D-43B5-8D77-DE30CFE4CDD9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5AAB08F8-389D-43B5-8D77-DE30CFE4CDD9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5AAB08F8-389D-43B5-8D77-DE30CFE4CDD9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5AAB08F8-389D-43B5-8D77-DE30CFE4CDD9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{77E7A804-F88E-4221-A7BB-BE518A1448ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{77E7A804-F88E-4221-A7BB-BE518A1448ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{77E7A804-F88E-4221-A7BB-BE518A1448ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{77E7A804-F88E-4221-A7BB-BE518A1448ED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{91946589-F262-4599-B99E-0DD9AF555975}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{91946589-F262-4599-B99E-0DD9AF555975}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{91946589-F262-4599-B99E-0DD9AF555975}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{91946589-F262-4599-B99E-0DD9AF555975}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FB65ADC8-8235-459F-853C-62FCBF201E9C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FB65ADC8-8235-459F-853C-62FCBF201E9C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FB65ADC8-8235-459F-853C-62FCBF201E9C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FB65ADC8-8235-459F-853C-62FCBF201E9C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,22 @@
+swagger: '2.0'
+basePath: /time
+produces:
+  - application/json
+paths:
+  /timeout:
+    get:
+      operationId: timeout
+      summary: Hello world
+      description: Echo back "Hello world!"
+    put:
+      operationId: timeout
+      summary: Hello world
+      description: Echo back "Hello world!"
+    post:
+      operationId: timeout
+      summary: Hello world
+      description: Echo back "Hello world!"
+    delete:
+      operationId: timeout
+      summary: Hello world
+      description: Echo back "Hello world!"

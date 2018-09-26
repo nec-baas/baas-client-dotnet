@@ -1,0 +1,22 @@
+swagger: '2.0'
+basePath: /err
+produces:
+  - application/json
+paths:
+  /error:
+    get:
+      operationId: error
+      summary: Hello world
+      description: Echo back "Hello world!"
+    put:
+      operationId: error
+      summary: Hello world
+      description: Echo back "Hello world!"
+    post:
+      operationId: error
+      summary: Hello world
+      description: Echo back "Hello world!"
+    delete:
+      operationId: error
+      summary: Hello world
+      description: Echo back "Hello world!"

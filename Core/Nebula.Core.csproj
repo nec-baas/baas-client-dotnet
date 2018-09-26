@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <MinimumVisualStudioVersion>12.0</MinimumVisualStudioVersion>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{91946589-F262-4599-B99E-0DD9AF555975}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Nec.Nebula</RootNamespace>
+    <AssemblyName>Nec.Nebula.Core</AssemblyName>
+    <DefaultLanguage>ja-JP</DefaultLanguage>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{786C830F-07A1-408B-BD7F-6EE04809D6DB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <TargetFrameworkProfile>Profile151</TargetFrameworkProfile>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
+    <RestorePackages>true</RestorePackages>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Debug\Nec.Nebula.Core.XML</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Release\Nec.Nebula.Core.XML</DocumentationFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="INbOfflineService.cs" />
+    <Compile Include="Internal\Database\NbDatabase.cs" />
+    <Compile Include="Internal\Field.cs" />
+    <Compile Include="Internal\Header.cs" />
+    <Compile Include="Internal\MongoObjectIdGenerator.cs" />
+    <Compile Include="Internal\NbRestRequest.cs" />
+    <Compile Include="NbRestResponse.cs" />
+    <Compile Include="NbRestResponseBase.cs" />
+    <Compile Include="Internal\NbSessionInfo.cs" />
+    <Compile Include="Internal\NbTypeConverter.cs" />
+    <Compile Include="Internal\NbUtil.cs" />
+    <Compile Include="Internal\QueryParam.cs" />
+    <Compile Include="NbAcl.cs" />
+    <Compile Include="NbAclBase.cs" />
+    <Compile Include="NbApiGateway.cs" />
+    <Compile Include="NbPushieldsBase.cs" />
+    <Compile Include="NbRestJsonResponse.cs" />
+    <Compile Include="NbSseFields.cs" />
+    <Compile Include="NbApnsFields.cs" />
+    <Compile Include="NbBatchRequest.cs" />
+    <Compile Include="NbBatchResult.cs" />
+    <Compile Include="NbBucketManager.cs" />
+    <Compile Include="NbContentAcl.cs" />
+    <Compile Include="NbDateUtils.cs" />
+    <Compile Include="NbException.cs" />
+    <Compile Include="NbFileBucket.cs" />
+    <Compile Include="NbFileMetadata.cs" />
+    <Compile Include="NbGcmFields.cs" />
+    <Compile Include="NbGroup.cs" />
+    <Compile Include="NbHttpException.cs" />
+    <Compile Include="NbJsonArray.cs" />
+    <Compile Include="NbJsonObject.cs" />
+    <Compile Include="NbJsonParser.cs" />
+    <Compile Include="NbObject.cs" />
+    <Compile Include="NbObjectBucket.cs" />
+    <Compile Include="NbObjectBucketBase.cs" />
+    <Compile Include="NbPush.cs" />
+    <Compile Include="NbQuery.cs" />
+    <Compile Include="Internal\NbRestExecutor.cs" />
+    <Compile Include="NbService.cs" />
+    <Compile Include="NbStatusCode.cs" />
+    <Compile Include="NbUser.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=7.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.7.0.1\lib\portable-net40+sl5+wp80+win8+wpa81\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

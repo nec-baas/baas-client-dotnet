@@ -1,0 +1,9 @@
+timeout:
+  code:
+    bucket: CUSTOM_CODE
+    file: time-1.0.0.tgz
+  handler: timeout
+  env:
+    spec: node6
+    timeout: 1
+    memorySize: 128

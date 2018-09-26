@@ -1,0 +1,22 @@
+swagger: '2.0'
+basePath: /res2
+produces:
+  - application/json
+paths:
+  /resp2:
+    get:
+      operationId: resp2
+      summary: Hello world
+      description: Echo back "Hello world!"
+    put:
+      operationId: resp2
+      summary: Hello world
+      description: Echo back "Hello world!"
+    post:
+      operationId: resp2
+      summary: Hello world
+      description: Echo back "Hello world!"
+    delete:
+      operationId: resp2
+      summary: Hello world
+      description: Echo back "Hello world!"

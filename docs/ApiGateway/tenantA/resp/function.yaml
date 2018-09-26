@@ -1,0 +1,9 @@
+resp:
+  code:
+    bucket: CUSTOM_CODE
+    file: res-1.0.0.tgz
+  handler: resp
+  env:
+    spec: node6
+    timeout: 600
+    memorySize: 128

@@ -1,0 +1,9 @@
+normal:
+  code:
+    bucket: CUSTOM_CODE
+    file: nor-1.0.0.tgz
+  handler: normal
+  env:
+    spec: node6
+    timeout: 600
+    memorySize: 128
