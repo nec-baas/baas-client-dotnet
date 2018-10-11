@@ -368,6 +368,12 @@ namespace Nec.Nebula
             {
                 var session = Service.SessionInfo;
                 session.Set(session.SessionToken, session.Expire, user);
+
+                // #10451 パスワード変更時は、セッショントークンを破棄する
+                if (password != null)
+                {
+                    session.Clear();
+                }
             }
 
             return user;

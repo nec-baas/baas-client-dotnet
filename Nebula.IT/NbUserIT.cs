@@ -1215,6 +1215,7 @@ namespace Nec.Nebula.IT
             Assert.AreEqual(result.CreatedAt, user.CreatedAt);
             Assert.AreNotEqual(result.UpdatedAt, user.UpdatedAt);
 
+            ITUtil.LoginUser(NewEmail, NewPassword).Wait();
             var newUser = NbUser.CurrentUser();
             Assert.AreEqual(result.Email, newUser.Email);
             Assert.AreEqual(result.Username, newUser.Username);
@@ -3255,6 +3256,7 @@ namespace Nec.Nebula.IT
                 var updateUser = user.SaveAsync(NewPassword).Result;
                 Assert.AreEqual(NewUserName, updateUser.Username);
                 Assert.AreEqual(NewEmail, updateUser.Email);
+                user = ITUtil.LoginUser(NewEmail, NewPassword).Result;
                 user.DeleteAsync().Wait();
             }
             ITUtil.UseMasterKey();

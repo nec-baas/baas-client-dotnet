@@ -125,7 +125,7 @@ namespace Nec.Nebula.IT
         /// <summary>
         /// NbObjectAggregationIT 開始時に１度だけ実行
         /// </summary>
-        [TestFixtureSetUp]
+        [SetUp]
         public void TestFixtureSetUp()
         {
             ITUtil.InitNebula();
